@@ -1,0 +1,14 @@
+The following folders:
+	-matplotlib-1.2.0
+	-numpy-1.7.0
+	-rickshaw-master
+	-web
+Contain the third party libraries needed.
+
+To load a .csv file into a new database, run 
+	python load.py
+from the command line
+
+To plot a subset of this data, run engraph_staticplot
+
+

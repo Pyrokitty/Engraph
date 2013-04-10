@@ -1,0 +1,18 @@
+import web
+import rrdtool
+import json
+
+urls = ('/','engraph')
+render = web.template.render('templates/')
+
+class engraph:
+    def GET(self):
+        datadict = [{'x':1206,'y':5},{'x':1208,'y':10},{'x':1212,'y':20}]
+ 
+       
+        return render.engraph('static/e.png', json.JSONEncoder().encode(datadict))
+
+
+if __name__ == '__main__':
+    app = web.application(urls,globals())
+    app.run()
